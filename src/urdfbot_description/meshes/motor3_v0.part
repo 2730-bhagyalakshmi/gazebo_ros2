@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "d92342f11334f5535ae6d0b0",
+    "documentMicroversion": "5d3830cf630cfc4cea489ed2",
+    "documentVersion": "f80a5d2ab29981c2198bdc3e",
+    "elementId": "2b7a2590526e92a283d9d173",
+    "fullConfiguration": "default",
+    "id": "MjG63PS2iXMrkzwkP",
+    "isStandardContent": false,
+    "name": "motor3 v0 <1>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

@@ -1,0 +1,288 @@
+<?xml version="1.0" ?>
+<robot name="urdfbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find robotic_description)/roboticarm/materials.xacro" />
+<xacro:include filename="$(find robotic_description)/roboticarm/Robotic.trans" />
+<xacro:include filename="$(find robotic_description)/roboticarm/Robotic.gazebo" />
+
+<link name="base_link">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/base_link_v2.stl"/>
+</geometry>
+<material name="base_link_v2_material">
+<color rgba="0.96078431372549022438 0.96078431372549022438 0.96470588235294119084 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/base_link_v2.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="joint1_v2">
+<visual>
+<origin xyz="0.032500157923717500064 -0.10699999999999999789 -0.05999999999999999778" rpy="3.141592653589793116 -0 0" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/joint1_v2.stl"/>
+</geometry>
+<material name="joint1_v2_material">
+<color rgba="0.96078431372549022438 0.96078431372549022438 0.96470588235294119084 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.032500157923717500064 -0.10699999999999999789 -0.05999999999999999778" rpy="3.141592653589793116 -0 0" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/joint1_v2.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="joint2_v0">
+<visual>
+<origin xyz="0 0 -0.0039999999999999966138" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/joint2_v0.stl"/>
+</geometry>
+<material name="joint2_v0_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 -0.0039999999999999966138" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/joint2_v0.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="arm2-1_v1_v1">
+<visual>
+<origin xyz="0.25 -0.11699999999999993738 -0.070000000000000020539" rpy="-1.570796326794896558 -4.692689551218504816e-32 -8.8873512186406768425e-48" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/arm2-1_v1_v1.stl"/>
+</geometry>
+<material name="arm2-1_v1_v1_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.25 -0.11699999999999993738 -0.070000000000000020539" rpy="-1.570796326794896558 -4.692689551218504816e-32 -8.8873512186406768425e-48" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/arm2-1_v1_v1.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="motor4_v1">
+<visual>
+<origin xyz="0 0 -0.17999999999999999334" rpy="4.2173073383928307531e-32 6.4689705677381234171e-33 4.7667651508457136603e-48" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/motor4_v1.stl"/>
+</geometry>
+<material name="motor4_v1_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 -0.17999999999999999334" rpy="4.2173073383928307531e-32 6.4689705677381234171e-33 4.7667651508457136603e-48" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/motor4_v1.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="joint5" type="fixed">
+<origin xyz="0.44999999999999995559 5.8841820305133296642e-15 -0.045000000000000060785" rpy="-3.141592653589793116 -1.5348869744334497225e-30 -1.570796326794896558" />
+<parent link="arm2-1_v1_v1" />
+<child link="motor4_v1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="motor3_v0">
+<visual>
+<origin xyz="-0.029777083599933029667 0.030000000000000009298 -0.18900000000000000133" rpy="4.2173073383928307531e-32 6.4689705677381234171e-33 4.7667651508457136603e-48" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/motor3_v0.stl"/>
+</geometry>
+<material name="motor3_v0_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.029777083599933029667 0.030000000000000009298 -0.18900000000000000133" rpy="4.2173073383928307531e-32 6.4689705677381234171e-33 4.7667651508457136603e-48" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/motor3_v0.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="joint3" type="fixed">
+<origin xyz="1.0755285551056203985e-16 -1.1102230246251565404e-16 1.3877787807814456755e-17" rpy="-3.141592653589793116 -1.5348869744334497225e-30 -1.570796326794896558" />
+<parent link="arm2-1_v1_v1" />
+<child link="motor3_v0" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="link5_v0">
+<visual>
+<origin xyz="5.5511151231257827021e-17 0 0" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/link5_v0.stl"/>
+</geometry>
+<material name="link5_v0_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="5.5511151231257827021e-17 0 0" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/link5_v0.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="endeffector_v1">
+<visual>
+<origin xyz="-0.021000000000000001305 -0.044267736659886647299 -0.0020000000000000017764" rpy="-3.141592653589793116 -2.1823401129183712903e-32 4.6517281145348951752e-32" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/endeffector_v1.stl"/>
+</geometry>
+<material name="endeffector_v1_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.021000000000000001305 -0.044267736659886647299 -0.0020000000000000017764" rpy="-3.141592653589793116 -2.1823401129183712903e-32 4.6517281145348951752e-32" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/endeffector_v1.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="camera_v1">
+<visual>
+<origin xyz="-0.002829881811464998731 0.0052382411106549620072 -0.040793175428913808211" rpy="-3.141592653589793116 -2.18234011291825634e-32 4.6517281145348951752e-32" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/camera_v1.stl"/>
+</geometry>
+<material name="camera_v1_material">
+<color rgba="0 0.4000000000000000222 0.5999999999999999778 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.002829881811464998731 0.0052382411106549620072 -0.040793175428913808211" rpy="-3.141592653589793116 -2.18234011291825634e-32 4.6517281145348951752e-32" />
+<geometry>
+<mesh filename="package://roboticarm_description/roboticarm/camera_v1.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="joint8" type="fixed">
+<origin xyz="0 -0.014267736659886676165 -0.043999999999999928058" rpy="2.1977635937606394986e-33 -7.1127207705495801238e-32 4.6517281145348951752e-32" />
+<parent link="endeffector_v1" />
+<child link="camera_v1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="joint7" type="revolute">
+<origin xyz="0 -0.089999999999999857891 -0.050999999999999996725" rpy="-1.570796326794896558 1.570796326794896558 0" />
+<parent link="link5_v0" />
+<child link="endeffector_v1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="joint6" type="revolute">
+<origin xyz="0.44999999999999995559 5.8841820305133296642e-15 -0.04500000000000002609" rpy="3.3463356938430797978e-30 3.4957480527725716725e-31 3.141592653589793116" />
+<parent link="arm2-1_v1_v1" />
+<child link="link5_v0" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="joint4" type="revolute">
+<origin xyz="0.45000000000000012212 -2.7842311789427753865e-16 -0.028000000000000004052" rpy="-3.141592653589793116 4.6926895512185004369e-32 1.570796326794896558" />
+<parent link="joint2_v0" />
+<child link="arm2-1_v1_v1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="joint2" type="revolute">
+<origin xyz="0.059500157923717496289 -0.0019999999999999991743 -0.064999999999999613642" rpy="-3.1415926535897926719 1.570796326794896558 0" />
+<parent link="joint1_v2" />
+<child link="joint2_v0" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="joint1" type="revolute">
+<origin xyz="2.0816681711721685133e-17 -1.3877787807814456755e-17 0.050000000000000002776" rpy="3.141592653589793116 -0 0" />
+<parent link="base_link_v2" />
+<child link="joint1_v2" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>
