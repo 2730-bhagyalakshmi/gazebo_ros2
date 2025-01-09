@@ -45,6 +45,7 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdfbot_description/" TYPE DIRECTORY FILES
     "/home/user/ros2_ws/src/urdfbot_description/urdf"
+    "/home/user/ros2_ws/src/urdfbot_description/meshes"
     "/home/user/ros2_ws/src/urdfbot_description/launch"
     )
 endif()

@@ -24,6 +24,7 @@ endif()
 install(
   DIRECTORY
     urdf
+	meshes
    
     launch
   DESTINATION

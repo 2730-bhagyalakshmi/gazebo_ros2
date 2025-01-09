@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <robot name="urdfbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-urdfbot_description
+
 <xacro:include filename="$(find urdfbot_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find urdfbot_description)/urdf/robot.trans" />
 <xacro:include filename="$(find urdfbot_description)/urdf/robot.gazebo" />

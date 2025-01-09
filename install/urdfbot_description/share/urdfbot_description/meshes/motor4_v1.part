@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "987cdb28514284fbf640fdeb",
+    "documentMicroversion": "215c52b4c6b4a5b2ced9f190",
+    "documentVersion": "e082e8d4828e99c2b8484c3b",
+    "elementId": "0a09e8d2b1289f81a6a30d13",
+    "fullConfiguration": "default",
+    "id": "M2qKPjtfnayGgMqmR",
+    "isStandardContent": false,
+    "name": "motor4 v1 <1>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

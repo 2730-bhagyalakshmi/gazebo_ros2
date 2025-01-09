@@ -1,0 +1,64 @@
+[0.130s] Invoking command in '/home/user/ros2_ws/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/build/urdfbot_description -- -j8 -l8
+[0.948s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.345s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[1.484s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.486s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.695s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.697s] -- Added test 'lint_cmake' to check CMake code style
+[1.698s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.701s] -- Added test 'xmllint' to check XML markup files
+[1.703s] -- Configuring done
+[1.710s] -- Generating done
+[1.711s] -- Build files have been written to: /home/user/ros2_ws/build/urdfbot_description
+[1.750s] Invoked command in '/home/user/ros2_ws/build/urdfbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/build/urdfbot_description -- -j8 -l8
+[1.811s] Invoking command in '/home/user/ros2_ws/build/urdfbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/build/urdfbot_description
+[1.821s] -- Install configuration: ""
+[1.821s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//urdf
+[1.821s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//urdf/materials.xacro
+[1.821s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//urdf/robot.gazebo
+[1.821s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//urdf/robot.urdf
+[1.822s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//urdf/urdfbot_simple.urdf
+[1.822s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//urdf/robot.trans
+[1.822s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//urdf/robot.xacro
+[1.822s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes
+[1.822s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/endeffector.part
+[1.822s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/link2.stl
+[1.823s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/link3.stl
+[1.823s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/motor3.stl
+[1.823s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/camera.stl
+[1.836s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/base_link.part
+[1.836s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_limb.dae
+[1.836s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_head.dae
+[1.836s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/config.json
+[1.836s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_claw.dae
+[1.837s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/link1.step
+[1.837s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/camera.part
+[1.837s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/base_link.stl
+[1.838s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_texture.png
+[1.838s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_foot.dae
+[1.838s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/link1.stl
+[1.841s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/endeffector.stl
+[1.841s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/link3.part
+[1.841s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/link4.stl
+[1.842s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/link2.part
+[1.842s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/motor3.part
+[1.842s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/urdfbot_body.dae
+[1.842s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//meshes/link4.part
+[1.842s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//launch
+[1.843s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description//launch/urdf_visualize.launch.py
+[1.843s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/ament_index/resource_index/package_run_dependencies/urdfbot_description
+[1.843s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/ament_index/resource_index/parent_prefix_path/urdfbot_description
+[1.843s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/environment/ament_prefix_path.sh
+[1.843s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/environment/ament_prefix_path.dsv
+[1.844s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/environment/path.sh
+[1.844s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/environment/path.dsv
+[1.844s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/local_setup.bash
+[1.844s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/local_setup.sh
+[1.844s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/local_setup.zsh
+[1.844s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/local_setup.dsv
+[1.844s] -- Installing: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/package.dsv
+[1.844s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/ament_index/resource_index/packages/urdfbot_description
+[1.844s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/cmake/urdfbot_descriptionConfig.cmake
+[1.844s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/cmake/urdfbot_descriptionConfig-version.cmake
+[1.844s] -- Up-to-date: /home/user/ros2_ws/install/urdfbot_description/share/urdfbot_description/package.xml
+[1.846s] Invoked command in '/home/user/ros2_ws/build/urdfbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/build/urdfbot_description

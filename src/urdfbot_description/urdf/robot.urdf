@@ -1,0 +1,243 @@
+<robot name="urdfbot">
+<link name="base_link">
+<visual>
+<origin xyz="1.7227260969490536535 0.27700031584743611823 0.24612486237179592719" rpy="-3.5469375559793907836e-16 -0 3.141592653589793116" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/base_link.stl"/>
+</geometry>
+<material name="base_link_material">
+<color rgba="0.96078431372549022438 0.96078431372549022438 0.96470588235294119084 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="1.7227260969490536535 0.27700031584743611823 0.24612486237179592719" rpy="-3.5469375559793907836e-16 -0 3.141592653589793116" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/base_link.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="link1">
+<visual>
+<origin xyz="0.03250015792371752088 -0.10699999999999998401 -0.070000000000000062172" rpy="3.141592653589793116 1.9849778321506492044e-32 -7.6775902188929967409e-48" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/link1.stl"/>
+</geometry>
+<material name="link1_material">
+<color rgba="0.96078431372549022438 0.96078431372549022438 0.96470588235294119084 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.03250015792371752088 -0.10699999999999998401 -0.070000000000000062172" rpy="3.141592653589793116 1.9849778321506492044e-32 -7.6775902188929967409e-48" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/link1.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="link2">
+<visual>
+<origin xyz="0 5.5511151231257827021e-17 -0.0040000000000000035527" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/link2.stl"/>
+</geometry>
+<material name="link2_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 5.5511151231257827021e-17 -0.0040000000000000035527" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/link2.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="motor3">
+<visual>
+<origin xyz="-0.029777083599932918645 0.029999999999999971134 -0.18900000000000002909" rpy="2.9614347868533266562e-32 -1.9121081669451284926e-47 2.0449864956794634884e-48" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/motor3.stl"/>
+</geometry>
+<material name="motor3_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.029777083599932918645 0.029999999999999971134 -0.18900000000000002909" rpy="2.9614347868533266562e-32 -1.9121081669451284926e-47 2.0449864956794634884e-48" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/motor3.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="joint4" type="fixed">
+<origin xyz="0.45000000000000017764 5.5511151231257827021e-17 -0.0030000000000000581757" rpy="-3.141592653589793116 1.9121081669451284926e-47 -2.0449864956794634884e-48" />
+<parent link="link2" />
+<child link="motor3" />
+<axis xyz="0 0 1"/>
+
+</joint>
+
+<link name="link3">
+<visual>
+<origin xyz="0.25000000000000022204 -0.11700000000000004841 -0.070000000000000006661" rpy="-1.570796326794896558 1.2883464875197931425e-31 -4.7158240237589775767e-17" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/link3.stl"/>
+</geometry>
+<material name="link3_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.25000000000000022204 -0.11700000000000004841 -0.070000000000000006661" rpy="-1.570796326794896558 1.2883464875197931425e-31 -4.7158240237589775767e-17" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/link3.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="link4">
+<visual>
+<origin xyz="0 0 0" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/link4.stl"/>
+</geometry>
+<material name="link4_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/link4.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="endeffector">
+<visual>
+<origin xyz="-0.021000000000000018652 -0.044267736659886716688 -0.0020000000000000017764" rpy="3.141592653589793116 -1.380379336551401247e-47 -1.0543268345982034461e-32" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/endeffector.stl"/>
+</geometry>
+<material name="endeffector_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.021000000000000018652 -0.044267736659886716688 -0.0020000000000000017764" rpy="3.141592653589793116 -1.380379336551401247e-47 -1.0543268345982034461e-32" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/endeffector.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="camera">
+<visual>
+<origin xyz="-0.0028298818114650403643 -0.0052382411106550175184 0.040793175428913697189" rpy="-2.3573741526866231034e-32 -6.2903186812521254127e-47 -5.3480498942879977652e-33" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/camera.stl"/>
+</geometry>
+<material name="camera_material">
+<color rgba="0 0.4000000000000000222 0.5999999999999999778 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.0028298818114650403643 -0.0052382411106550175184 0.040793175428913697189" rpy="-2.3573741526866231034e-32 -6.2903186812521254127e-47 -5.3480498942879977652e-33" />
+<geometry>
+<mesh filename="package://urdfbot_description/meshes/camera.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="joint9" type="fixed">
+<origin xyz="0 0.0057322633401133415987 -0.04400000000000003908" rpy="3.141592653589793116 -4.542775275328014268e-31 6.6613381477509412147e-16" />
+<parent link="endeffector" />
+<child link="camera" />
+<axis xyz="0 0 1"/>
+
+</joint>
+
+<joint name="joint8" type="continuous">
+<origin xyz="0 0.090000000000000024425 -0.051000000000000045297" rpy="1.5707963267948970021 5.364715727473995986e-47 -2.2713876376640053824e-31" />
+<parent link="link4" />
+<child link="endeffector" />
+<axis xyz="0 0 1"/>
+
+</joint>
+
+<joint name="joint7" type="continuous">
+<origin xyz="0 2.2204460492503130808e-16 5.5511151231257827021e-17" rpy="3.141592653589793116 -4.4476893148458130919e-17 -0.57870963485806281579" />
+<parent link="link3" />
+<child link="link4" />
+<axis xyz="0 0 1"/>
+
+</joint>
+
+<joint name="joint5" type="continuous">
+<origin xyz="0.45000000000000012212 -2.7842311789427753865e-16 -0.028000000000000004052" rpy="-3.141592653589793116 4.6926895512185004369e-32 1.570796326794896558" />
+<parent link="link2" />
+<child link="link3" />
+<axis xyz="0 0 1"/>
+
+</joint>
+
+<joint name="joint3" type="continuous">
+<origin xyz="0.039500157923717499342 -0.0020000000000000017764 -0.074999999999999622524" rpy="-1.570796326794896336 9.2041737304391631365e-32 1.5707963267948961139" />
+<parent link="link1" />
+<child link="link2" />
+<axis xyz="0 0 1"/>
+
+</joint>
+
+<joint name="joint1" type="continuous">
+<origin xyz="1.7227260969490536535 0.27700031584743611823 0.29612486237179591608" rpy="3.141592653589793116 3.5469375559793902906e-16 -1.570796326794896558" />
+<parent link="base_link" />
+<child link="link1" />
+<axis xyz="0 0 1"/>
+
+</joint>
+
+
+</robot>
